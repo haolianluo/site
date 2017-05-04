@@ -1,47 +1,34 @@
 language: node_js
-
 node_js:
-  - "4"
-
+    - '4'
 cache:
   apt: true
   directories:
-    - node_modules
-
-addons:
-  apt:
-    packages:
-      - graphicsmagick
-
-env:
-  - CXX=g++-4.8
-
+  - node_modules
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+        - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+        - g++-4.8
   ssh_known_hosts: github.com
-
+env:
+- CXX=g++-4.8
 before_install:
-  # Set Git config
+  - openssl aes-256-cbc -K $encrypted_00d9041ddaaf_key -iv $encrypted_00d9041ddaaf_iv -in ssh_key.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp .travis/ssh_config ~/.ssh/config
   - git config --global user.name "zacksleo"
   - git config --global user.email "zacksleo@gmail.com"
   - git config --global push.default simple
-
 script:
-  # Clone the repository
   - git clone https://${GH_TOKEN}@github.com/haolianluo/haolianluo.github.io.git .deploy_git -v
-  # Update docs.
-  - git --version
   - git remote add -f docs https://${GH_TOKEN}@github.com/haolianluo/docs.git
   - git fetch docs
   - git subtree add --prefix=source/zh-cn/docs docs/zh-cn --squash
-  # Install dependencies
   - npm install --no-optional
-  # - npm info hexo-renderer-marked
-
 after_script:
   - hexo generate && gulp
   - cp -r public/zh-cn/docs/* public/docs/
@@ -50,7 +37,6 @@ after_script:
   - git add -A
   - git commit -am "Auto deploy from Travis-CI."
   - git push --force
-
 branches:
   only:
     - master
