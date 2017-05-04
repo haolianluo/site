@@ -24,7 +24,6 @@ script:
 - git --version
 - git remote add -f docs https://${GH_TOKEN}@github.com/haolianluo/docs.git
 - git fetch docs
-- git subtree add --prefix=source/en/docs docs/en --squash
 - git subtree add --prefix=source/zh-cn/docs docs/zh-cn --squash
 - npm install --no-optional
 after_script:
