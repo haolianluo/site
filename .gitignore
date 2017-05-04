@@ -9,3 +9,4 @@ public/
 .travis/ssh_key.pub
 source/zh-cn/
 source/en/docs/*
+.idea/

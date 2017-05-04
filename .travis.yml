@@ -15,8 +15,6 @@ addons:
 env:
 - CXX=g++-4.8
 before_install:
-- openssl aes-256-cbc -K $encrypted_00d9041ddaaf_key -iv $encrypted_00d9041ddaaf_iv
-  -in id_rsa.enc -out ~\/.ssh/travis/id_rsa -d
 - git config --global user.name "zacksleo"
 - git config --global user.email "zacksleo@gmail.com"
 - git config --global push.default simple
