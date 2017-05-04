@@ -1,0 +1,67 @@
+menu:
+  home: Home
+  docs: Docs
+  forum: Froum
+  video: Video Tutorial
+  news: News
+  donate: Donate
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+  donate: Donate
+
+sidebar:
+  docs:
+    getting_started: Getting Started
+    overview: Overview
+    setup: Setup
+    tutorial: Tutorial
+    installation: Installation
+    integration: Integration
+    releases: Releases Notes
+    roadmap: Roadmap
+    accounts: accounts
+    payment: Payment
+    merchant_payment: Merchant Payment
+    lucky_money: Lucky Money
+    cash_coupon: Cash Coupon
+    broadcast: Broadcast
+    configuration: Configuration
+    basic_usage: Basic Usage
+    miscellaneous: Miscellaneous
+    troubleshooting: Troubleshooting
+    contributing: Contributing
+    customization: Customization
+    server: Server
+    menu: Menu
+    user: User
+    user_tag: User Tag
+    user_group: User Group
+    cache: Cache
+    oauth: Oauth
+    messages: Messages
+    message_transfer: Message Transfer
+    open_platform: Open Platform
+    events: Events
+    material: Materials
+    card: Card
+    store: Store
+    poi: POI
+    staff: Staff
+    js: Javascript
+    anaylsis: Anaylsis
+    notice: Notice
+    qrcode: Qrcode
+    short_url: Short Url
+    semantic: Semantic
+    reply: Auto Reply
+    access_token: Access Token
+    faq: FAQ

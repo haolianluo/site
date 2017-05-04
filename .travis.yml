@@ -15,11 +15,6 @@ addons:
 env:
 - CXX=g++-4.8
 before_install:
-  - openssl aes-256-cbc -K $encrypted_00d9041ddaaf_key -iv $encrypted_00d9041ddaaf_iv -in ./.travis/ssh_key.enc -out ~/.ssh/id_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
-  - eval $(ssh-agent)
-  - ssh-add ~/.ssh/id_rsa
-  - cp .travis/ssh_config ~/.ssh/config
   - git config --global user.name "zacksleo"
   - git config --global user.email "zacksleo@gmail.com"
   - git config --global push.default simple
