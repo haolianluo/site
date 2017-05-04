@@ -32,7 +32,7 @@ before_install:
 
 script:
   # Clone the repository
-  - git clone https://${GH_TOKEN}@github.com/easywechat/haolianluo.github.io.git .deploy_git -v
+  - git clone https://${GH_TOKEN}@github.com/haolianluo/haolianluo.github.io.git .deploy_git -v
   # Update docs.
   - git --version
   - git remote add -f docs https://${GH_TOKEN}@github.com/haolianluo/docs.git
