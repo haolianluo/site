@@ -14,7 +14,7 @@ docs:
     client_pattern: client-pattern.html
     code_pattern: code-pattern.html
     password_pattern: password-pattern.html
-    refresh_token: refersh-token.html
+    refresh_token: refresh-token.html
 
   miscellaneous:
 
