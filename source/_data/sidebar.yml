@@ -1,18 +1,21 @@
 docs:
 
   getting_started:
-    overview: index.html
-    installation: installation.html
-    tutorial: tutorial.html
-    configuration: configuration.html
-    integration: integration.html
-    faq: troubleshooting.html
-  basic_usage:
-    server: server.html
-  customization:
-    access_token: access_token.html
+    overview: get-started.html
+
+  app_integration:
+
+  web_integration:
+    overview: web-integration.html
+
+  other:
+  
+    design: design.html
+    authentication: authentication.html
+    token: token.html
+    troubleshooting: qa.html
+
   miscellaneous:
-    troubleshooting: troubleshooting.html
+
     contributing: contributing.html
     releases: releases.html
-    roadmap: roadmap.html

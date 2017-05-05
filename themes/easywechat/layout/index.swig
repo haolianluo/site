@@ -2,7 +2,7 @@
   <div class="inner">
     <h2 id="banner-title">{{ page.subtitle }}</h2>
     <div id="banner-start">
-            
+
     </div>
     <div id="banner-share">{{ partial('partial/share') }}</div>
   </div>
