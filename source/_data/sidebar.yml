@@ -9,9 +9,8 @@ docs:
     overview: web-integration.html
 
   other:
-  
+
     design: design.html
-    authentication: authentication.html
     token: token.html
     troubleshooting: qa.html
 
