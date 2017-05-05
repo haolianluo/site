@@ -13,7 +13,8 @@
       <div id="footer-links">
         <a href="http://weibo.com/{{ config.weibo }}" class="footer-link" target="_blank"><i class="fa fa-weibo"></i></a>
         <a href="https://github.com/{{ config.github }}" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
-        <a href="https://twitter.com/{{ config.twitter }}" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://mall.lianluo.com" class="footer-link" target="_blank"><i class="fa fa-shopping-bag"></i></a>
+        <a href="http://www.lianluo.com" class="footer-link" target="_blank"><i class="fa fa-home"></i></a>
       </div>
     </div>
   </div>
