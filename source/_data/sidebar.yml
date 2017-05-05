@@ -4,17 +4,21 @@ docs:
     overview: get-started.html
 
   app_integration:
+    overview: app-integration.html
 
   web_integration:
     overview: web-integration.html
 
-  other:
-
-    design: design.html
+  token:
     token: token.html
-    troubleshooting: qa.html
+    client_pattern: client-pattern.html
+    code_pattern: code-pattern.html
+    password_pattern: password-pattern.html
+    refresh_token: refersh-token.html
 
   miscellaneous:
 
+    design: design.html
+    troubleshooting: qa.html
     contributing: contributing.html
     releases: releases.html
